@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Advanced Digital Integrated Circuits</title>
+    <meta name="description" content="Introduction to Digital Design and Integrated Circuits">
+
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <link rel="canonical" href="http://inst.eecs.berkeley.edu/~ee241/sp20/">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Bitter:400,400i,700" rel="stylesheet">
+  </head>
+
+
+  <body>
+    <header class="site-header">
+      <div class="wrapper">
+        <a class="site-title" href="./index.html">EECS 251B, Spring 2022</a>
+
+        <nav class="site-nav">
+          <a class="page-link" href="#course-outline">Outline</a>
+          <a class="page-link" href="#resources">Resources</a>
+          <a class="page-link" href="https://piazza.com/berkeley/spring2022/eecs251b">Piazza</a>
+          <a class="page-link" href="http://inst.eecs.berkeley.edu/~eecs251b/archives.html">Archives</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+          <header class="post-header">
+            <h1 class="post-title">Advanced Digital Circuits and Systems</h1>
+          </header>
+
+        <div class="post-content">
+          <h2 id="letures-labs-office-hours">Lectures and Office Hours</h2>
+          <table>
+            <tbody>
+              <tr>
+                <td>Lectures</td>
+                <td>Tues, Thurs</td>
+                <td>9:30 am - 11:00 am</td>
+                <td>540AB Cory</td>
+                <td>Borivoje Nikolic, Sophia Shao, Vladimir Stojanovic</td>
+              </tr>
+              <tr>
+                <td>Discussion</td>
+                <td>Fri</td>
+                <td>10:00 am - 11:00 am</td>
+                <td>540AB Cory</td>
+                <td>Erik Anderson</td>
+              </tr>
+              <tr>
+                <td>Office Hours</td>
+                <td>TBD</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <!-- TODO uncomment when office hours are known!
+              <tr>
+                <td>Office Hours</td>
+                <td>Tues</td>
+                <td>11:00 am - 12:00 pm</td>
+                <td></td>509 Cory
+                <td>Borivoje Nikolic</td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>Mon</td>
+                <td>1:00 pm - 2:00 pm</td>
+                <td>504 Cory</td>
+                <td>Daniel Grubb</td>
+              </tr>
+              -->
+            </tbody>
+          </table>
+
+          <h2 id="homework">Homework</h2>
+
+          <ul>
+            <li>Ask questions on <a href="https://piazza.com/berkeley/spring2022/eecs251b">our Piazza forum</a>.</li>
+            <li>Homeworks will be posted as links in the <a href="#course-outline">outline</a> below.</li>
+          </ul>
+
+          <h2>Exams</h2>
+
+          <ul>
+            <li>There will be four quizzes during the semester.</li>           
+            <li>Final exam will be held during the last week of the course.</li>           
+          </ul>
+
+          <h2 id="course-outline">Course Outline</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Week</th>
+                <th>Date</th>
+                <th>Lecture Topic</th>
+                <th>Recording</th>
+                <th>Reading</th>
+                <th>Lab</th>
+                <th>Homework</th>
+                <th>Homework Solution</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>1/18</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>1/20</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>1/25</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>1/27</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>2/1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tr>
+                <tr>
+                <td>6</td>
+                <td>2/3</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>2/8</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>2/10</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>2/15</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>2/17</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>2/22</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>2/24</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>3/1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>3/3</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>3/8</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>3/10</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>3/15</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>3/17</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>3/29</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>3/31</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>4/5</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>4/7</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>4/12</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>4/14</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>4/19</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td>4/21</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>4/26</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>28</td>
+                <td>4/28</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>5/3</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>5/5</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+          <h2 id="resources">Resources</h2>
+          <h3 id="textbooks">Textbooks</h3>
+
+          <ul>
+            <li><strong>Optional</strong> <i>Low Power Design Essentials</i>, J. Rabaey, Springer, 2009. </li>
+            <li><strong>Baseline</strong> <a href="http://search.ebscohost.com/login.aspx?direct=true&amp;db=cat04202a&amp;AN=ucb.b15897583&amp;site=eds-live&amp;authtype=ip,guest&amp;custid=s1226370&amp;groupid=main&amp;profile=eds"><i>Digital Integrated Circuits: A Design Perspective</i></a>, Jan M. Rabaey, Anantha Chandrakasan, Borivoje Nikolić</li>
+            <li><strong>Useful</strong> <a href="https://www.amazon.com/dp/0321547748/ref=cm_sw_em_r_mt_dp_U_ui6rCbRX2GR88"><i>CMOS VLSI Design</i></a>, Neil Weste, David Harris</li>
+            <li><strong>Useful</strong> <i>Design of High-Performance Microprocessor Circuits</i></a>, A. Chandrakasan, W. Bowhill, F. Fox, IEEE Press, 2001.</li>
+          </ul>
+
+          <h2 id="staff">Staff</h2>
+
+          <table>
+            <tbody>
+              <tr>
+                <td><img src="img/bora.jpg" alt="bora photo" style="width:100px;"/></td>
+                <td>Borivoje Nikolic</td>
+                <td>bora at berkeley dot edu</td>
+              </tr>
+              <tr>
+                <td><img src="img/sophia.jpg" alt="sophia photo" style="width:100px;"/></td>
+                <td>Sophia Shao</td>
+                <td>ysshao at berkeley dot edu</td>
+              </tr>
+              <tr>
+                <td><img src="img/vladimir.jpg" alt="vlada photo" style="width:100px;"/></td>
+                <td>Vladimir Stojanovic</td>
+                <td>vlada at berkeley dot edu</td>
+              </tr>
+              <tr>
+                <td><img src="img/erik.jpg" alt="erik photo" style="width:100px;"/></td>
+                <td>Erik Anderson</td>
+                <td>erik dot f dot francis at berkeley dot edu</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2 id="grading">Grading</h2>
+
+          <h3 id="class">Class</h3>
+
+          <table>
+            <tbody>
+              <tr>
+                <td>Assignments</td>
+                <td>20%</td>
+              </tr>
+              <tr>
+                <td>Design Project</td>
+                <td>40%</td>
+              </tr>
+              <tr>
+                <td>Quizzes</td>
+                <td>10%</td>
+              </tr>
+              <tr>
+                <td>Final Exam</td>
+                <td>30%</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <h2 id="cheating-policy">Cheating Policy</h2>
+
+          <ul>
+            <li>If you turn in someone else’s work as if it were your own, you are guilty of cheating.  This includes problem sets, answers on exams, lab exercise checks, project design, and any required course turn-in material.</li>
+            <li>Also, if you knowingly aid in cheating, you are guilty.</li>
+            <li>We have software that compares your submitted work to others.</li>
+            <li>However, it is okay to discuss with others lab exercises and the project (obviously, okay to work with project partner).  Okay to discuss homework with others.  But everyone must turn in their own work.</li>
+            <li>Do not post your work on public repositories like github (private o.k.)</li>
+            <li><strong>If we catch you cheating, you will get negative points on the assignment: It is better to not do the work than to cheat!   If it is a midterm exam, final exam, or final project, you get an F in the class.  All cases of cheating reported to the office of student conduct. </strong></li>
+          </ul>
+      </div>
+    </article>
+  </div>
+  <p align="center">&copy; - Powered by <a href="https://jekyllrb.com/">Jekyll</a> &amp; <a href="https://github.com/yous/whiteglass">whiteglass</a></p>
+</main>
+</body>
+</html>
